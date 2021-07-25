@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="\style.css">
+
+    <style>
+            .div
+        {   
+        
+        position: absolute;
+        top: 45%;
+        left:34.99%;
+       -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 30px;
+        }
+        
+        img {
+  opacity: 0.2;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+ margin: 0;
+  position: absolute;
+            top:49%;
+            left:20%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+            
+  
+}
+        .heading1{
+            opacity: 0.2;
+        color:white;
+        font-family:Chosence;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 79%;
+        left:40%;
+       -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+           }
+    </style>
+    
+    
+    
+  </head>
+    
+    <link rel='icon' href="icon.png" type='image/x-icon'/>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAbMhN0NyylJLxa2mscLKSRUQ6FFAsutxI",
+    authDomain: "login-c5ad1.firebaseapp.com",
+    databaseURL: "https://login-c5ad1.firebaseio.com",
+    projectId: "login-c5ad1",
+    storageBucket: "login-c5ad1.appspot.com",
+    messagingSenderId: "499786764727",
+    appId: "1:499786764727:web:a7f1db53d102909c3fd832",
+    measurementId: "G-B7E5NH4E9T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="firebaseauthui.css" />
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+<script type="text/javascript">
+  // FirebaseUI config.
+  var uiConfig = {
+    signInSuccessUrl: 'SelectionPage.html',
+    signInOptions: [
+         firebase.auth.EmailAuthProvider.PROVIDER_ID,
+    ],
+  };
+
+  // Initialize the FirebaseUI Widget using Firebase.
+  var ui = new firebaseui.auth.AuthUI(firebase.auth());
+  // The start method will wait until the DOM is loaded.
+  ui.start('#firebaseui-auth-container', uiConfig);
+</script>
+<script language="JavaScript">
+  javascript:window.history.forward(1);
+  </script>
+  </head>
+  <body style="background-color: black">
+    <img src="bg12.png">
+    <h1 class="heading1"> Jewellery Manufacturers </h1>
+    <div class="div">
+  <div id="firebaseui-auth-container"></div>
+  </div>
+</body>
+</html>
+    
+   

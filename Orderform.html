@@ -1,0 +1,502 @@
+<html>
+        <head>
+                <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+                <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+
+
+                 <script>    
+                
+                 function readURL(input) 
+                 {
+                        if (input.files && input.files[0])
+                         {
+                            var reader = new FileReader();
+            
+                            reader.onload = function (e) 
+                            {
+                                $('#img')
+                                    .attr('src',e.target.result)
+                                    .width(250)
+                                    .height(140.63);
+                            };
+            
+                            reader.readAsDataURL(input.files[0]);
+                        }
+ 
+                    }
+                    
+                
+                 </script>
+                
+                    
+<script>
+ 
+function add1(){
+  var el = document.getElementById('dp');
+  var val = el.value.split('+'); 
+  document.getElementById("dpa").value=val.reduce((a,c)=> a + Number(c), 0);;
+}
+
+function add2(){
+  var el = document.getElementById('dw');
+  var val = el.value.split('+'); 
+  document.getElementById("dwa").value=val.reduce((a,c)=> a + Number(c), 0);;
+}
+
+function add3(){
+  var el = document.getElementById('csp');
+  var val = el.value.split('+'); 
+  document.getElementById("cspa").value=val.reduce((a,c)=> a + Number(c), 0);;
+}
+
+function add4(){
+  var el = document.getElementById('csw');
+  var val = el.value.split('+'); 
+  document.getElementById("cswa").value=val.reduce((a,c)=> a + Number(c), 0);;
+}
+</script>
+        
+
+                
+                <style>
+
+
+article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+  body {
+  background: rgb(212, 212, 212); 
+}
+
+
+body {
+background: url(bg.jpg);
+background-size: cover;
+position: center;
+background-repeat: no-repeat;
+}
+  
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+  
+}
+select {
+        width: 150px;
+        height:2%;
+}
+.heading1{
+        text-align: center;
+        position: relative;
+  left: -27px;
+}
+.bt1{
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left:46.5%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+            font-family:Chosence;
+              background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    width: 200px;
+        }
+        .bt2{
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left:46.5%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+            font-family:Chosence;
+              background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    width: 200px;
+        }
+        .div1 
+        {   
+        
+        position: absolute;
+        
+        left:23.7%;
+       -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 30px;
+        top:160.5% ;
+            
+
+        }
+        .div2
+        {   
+        
+        position: absolute;
+        
+        left:43.2%;
+       -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 30px;
+        top:158.9% ;
+            
+
+        }
+        .div3
+        {   
+        
+        position: absolute;
+        
+        left:62.9%;
+       -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 30px;
+        top:160.97%;
+   
+            
+
+        }
+        @media print,screen {
+
+.Header {
+     display: none;
+    }
+}
+@media print {
+
+.noprt { display: none; }
+
+}
+.cp-text{text-align: center;
+        position: absolute;
+        top: 164%;
+        left:35%;
+
+color: rgba(0,0,0,.7); text-shadow: 0 1px rgba(255, 255, 255, 0.1);}
+
+input {font-weight:bold;}
+select {
+  font-weight: bold;
+}
+textarea {
+  font-weight: bold;
+}
+
+#dp,#dpa{
+        width:93px;
+}
+#csp,#cspa{
+        width:83px;
+}
+#len{
+        width: 129px;
+}
+
+#cname
+{
+        width:5.72cm;
+}
+#odd{
+        width: 5cm;
+}
+#kname{
+        width: 6.195cm;
+}
+#pieces{
+        width: 7.6cm;
+}
+#pur{
+        width: 7.69cm;
+}
+#set{
+        width: 7.41cm;
+}
+#dno
+{
+        width: 5.63cm;
+}
+#csw,#cswa{
+        width: 2.46cm;
+}
+#dw,#dwa{
+        width: 2.72cm;
+}
+#cst{
+        width: 5.5cm;
+}
+#ed{
+        width: 13.3cm;
+}
+#csd{
+        width: 13.2cm;
+}
+#des{
+        width: 13.2cm;
+}
+#ord{
+        width:4.13cm ;
+}
+#ono{
+        width:5.3cm ;
+}
+#items
+{
+        width: 7.1cm;
+}
+#metal
+{
+        width: 7.05cm;
+}
+#gw
+{
+        width: 5.72cm;
+}
+#fin
+{
+        width: 7cm;
+}
+#csm{
+        width:4.5cm;
+}
+
+        </style>
+        <link rel='icon' href="icon.png" type='image/x-icon'/>
+        </head>
+ <body>
+      
+                      
+     <div class="divpg">           
+<page size="A4">
+<b><h1 class ="heading1">&nbsp; Order Form</h1></b>
+<hr> <br>
+<div clas='div'>
+        <b>
+                <form id="ordfrm">
+                        
+        &nbsp; &nbsp; &nbsp; • PC Order Number: <input type="text" id="pc" name="pc">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • Customer Name: <input type="text" id="cname" name="cname">
+    <br> <br> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;• Order Received Date: <input type="date" id="ord" name="ord">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Order Delivery Date: <input type="date" id="odd" name="odd">
+      <br> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Order Number: <input type="text" id="ono" name="ono">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Karigar Name:        
+       <select id = "kname">
+        <option value="----">----</option>
+<option value="S1">S1</option>
+<option value="S">S</option>
+<option value="P1">P1</option>
+<option value="P">P</option>
+<option value="B">B</option>
+<option value="M">M</option>
+<option value="C">C</option>
+<option value="G">G</option>
+</select>
+
+
+      <br> <br> <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Items:</label>
+        <select id = "items">
+                <option value="----">----</option>
+  <option value="Single Bangle">Single Bangle</option>
+  <option value="Pair Bangles">Pair Bangles</option>
+  <option value="Earings">Earings</option>
+<option value="Ring">Ring</option>
+<option value="Necklace">Necklace</option>
+<option value="Belt">Belt</option>
+<option value="Nosepin">Nosepin</option>
+<option value="Pendant">Pendant</option>
+<option value="Bracelet">Bracelet</option>
+<option value="Mogappu">Mogappu</option>
+<option value="Antu">Antu</option>
+<option value="Plain Gold Jewel">Plain Gold Jewel</option>
+<option value="Others">Others</option>
+        </select>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Pieces: <input type="text" id="pieces">        <br><br><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Metal:</label>
+        <select id = "metal">
+                <option value="----">----</option>
+<option value="Gold">Gold</option>
+<option value="Gold Studded Diamonds">Gold Studded Diamonds</option>
+<option value="Silver">Silver</option>
+
+        </select>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Purity:</label>
+        <select id = "pur">
+                <option value="----">----</option>
+<option value="18 KT">18 KT</option>
+<option value="22 KT">22 KT</option>
+
+        </select>
+        <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Gold Weight: <input type="text" id="gw" name="gname">
+        
+        
+        <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Setting:</label>
+        <select id = "set">
+                <option value="----">----</option>
+<option value="Open">Open</option>
+<option value="Close">Close</option>
+
+        </select>
+        <br> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Size: <input type="text" id="size" name="size">
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> • Size Type:</label>
+        <select id = "st">
+                <option value="----">----</option>
+<option value="Plastic">Plastic</option>
+<option value="Rod">Rod</option>
+
+</select>
+
+&nbsp;&nbsp;&nbsp;&nbsp;• Screw Type: 
+       
+<select id = "len">
+        <option value="----"></option>
+<option value="South">South</option>
+<option value="Bombay">Bombay</option>
+<option value="Push and Pull">Push and Pull</option>
+</select>
+
+        <br> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> • Finish:</label>
+        <select id = "fin">
+                <option value="----"></option>
+<option value="Yellow">Yellow</option>
+<option value="White">White</option>
+<option value="Rose Gold">Rose Gold</option>
+</select>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Diamond Lot No: <input type="text" id="dno" name="dno">
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Diamond Pieces: <input type="text" id="dp"
+oninput="add1()" onchange="add1()">
+<input type="text" id=dpa>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Diamond Weight: <input type="text" id="dw" name="dw" 
+                oninput="add2()" onchange="add2()">
+                <input type="text" id=dwa>
+
+<br> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>• Color Stone Model:</label>
+<select id = "csm">
+        <option value="----">----</option>
+<option value="Real">Real</option>
+<option value="Immitation">Immitation</option>
+<option value="Zircon">Zircon</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>• Color Stone Type:</label>
+                        <select id = "cst">
+                                <option value="----">----</option>
+                <option value="Cut">Cut</option>
+                <option value="Uncut">Uncut</option>
+                <option value="Zircom">Zircon</option>
+                </select>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Color Stone Pieces: <input type="text" id="csp" 
+oninput="add3()" onchange="add3()">
+<input type="text" id=cspa>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Color Stone Weight: <input type="text" id="csw"
+oninput="add4(this.value)" onchange="add4(this.value)">
+<input id="cswa">
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="ed">• Engraving Details:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+                <textarea id="ed" rows="2" cols="67">
+                
+                </textarea>
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="ed">• Customer Sample Details:</label>
+                
+                &nbsp;&nbsp;&nbsp;<textarea id="csd" rows="4" cols="67">
+                
+                </textarea>
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="ed">• Description:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="des" rows="4" cols="67">
+                </textarea>
+
+<div>
+       <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type='file' onchange="readURL(this);" id="image" accept="image/*" />
+    <img id="img" src="#" alt="your image"/>
+    <button type="button" onclick="upload()">Upload</button>
+    
+    
+    </div> 
+<div>
+<br><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Authorized Signature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •Staff Signature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Karigar Signature</p>
+<i><b><p style="color:  #311b92;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Harish/Lalith)</p> </b></i>
+
+    
+    
+   </b>
+ </div>
+</page>
+
+     </div>
+     <div class="noprt">
+<div class="div1" >
+<button type="button" onclick="print(); insert();"class="bt1">Print</button>
+</div>
+
+<div class='div2'> 
+       <br>  <button type="button" onclick="insert();"class="bt2">Save</button>
+ 
+</div>
+
+<div class='div3'> 
+        <a id="Navigate" href="SelectionPage.html">
+                <input 
+                  type="button"
+                  value='Cancel'
+                  style="       font-family:Chosence;
+                  background-color: #4CAF50;
+                  border: none;
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                  margin: 4px 2px;
+                  cursor: pointer; 
+                  width: 200px;"
+                  />
+        </a>
+ </div>
+              
+        <i><p class="cp-text">
+                © Copyright 2020 Jewellery Manufacturers. All Rights Reserved
+       
+        </p></i>
+        
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-storage.js"></script>
+<script src="uploaddata.js"></script>
+
+
+<script>
+        console.log(document.getElementById('pc').value); 
+</script>
+
+
+</body>
+</html>
